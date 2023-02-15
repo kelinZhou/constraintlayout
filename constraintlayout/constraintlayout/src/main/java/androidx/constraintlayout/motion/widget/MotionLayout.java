@@ -4362,7 +4362,7 @@ public class MotionLayout extends ConstraintLayout implements
             if (cSet != null) {
                 cSet.applyTo(this);
             }
-            mBeginState = mCurrentState;
+//             mBeginState = mCurrentState; //避免开始状态和结束状态一致而导致问题的发生。
         }
         onNewStateAttachHandlers();
         if (mStateCache != null) {
